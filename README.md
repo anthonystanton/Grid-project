@@ -10,3 +10,4 @@ Desktop first, single-page. Made using HTML and SASS. Grid focused layout across
 * Responsive design used throughout
 * Used breakpoints specifically for when the site starts to break
 * Aimed to build a website that uses reusable code
+* Build from a follow-along from Jonas Schmedtmann
