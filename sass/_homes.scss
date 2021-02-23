@@ -1,0 +1,68 @@
+.homes {
+    
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 6rem;
+    margin: 5rem 0;
+}
+.home {
+    background-color: $color-grey-light-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        z-index: 5;
+    }
+    &__like {
+        fill: brown;
+        width: 3rem;
+        height: 3rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: end;
+        z-index: 10;
+        margin: 1rem;
+    }
+    &__name {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        align-self: end;
+        background: $color-secondary;
+        color: white;
+        padding: 1.25rem;
+        font-family: $font-display;
+        font-weight: 400;
+        font-size: 1.6rem;
+        transform: translateY(2.5rem);
+        z-index: 6;
+        text-align: center;
+        justify-self: center;
+    
+    }
+    &__location,
+    &__rooms,
+    &__area,
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            fill: $color-primary;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+        }
+        p {
+            font-family: $font-primary;
+            font-size: 1.3rem;
+        }
+    }
+    &__btn {
+        grid-column: 1 / -1;
+        justify-self: initial;
+    }
+}
